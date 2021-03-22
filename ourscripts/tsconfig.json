@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        // "target": "es2015",
+        "target": "esnext",
+        "lib": ["DOM", "ES2018"],
+        // "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+    }
+}
