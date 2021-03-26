@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
 
     <script src="./ourscripts/gallery.js" defer></script>
-    <link rel="stylesheet" href="./ourcss/gallery.css">
+    <script src="./ourscripts/items.js" defer></script>
+    <link rel="stylesheet" href="./ourcss/pages.css" type="text/css">
 <!--
 TemplateMo 552 Video Catalog
 https://templatemo.com/tm-552-video-catalog
@@ -25,12 +26,12 @@ https://templatemo.com/tm-552-video-catalog
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative">
                     <div class="row">
-                        <div class="col-7 col-md-4">
+                        <!-- <div class="col-7 col-md-4">
                             <a href="index.html" class="tm-bg-black text-center tm-logo-container">
                                 <i class="fas fa-video tm-site-logo mb-3"></i>
                                 <h1 class="tm-site-name">Video Catalog</h1>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
                                 <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
@@ -45,13 +46,16 @@ https://templatemo.com/tm-552-video-catalog
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Videos <span class="sr-only">(current)</span></a>
+                                                <a class="nav-link tm-nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                                <a class="nav-link tm-nav-link" href="#about">About</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                                <a class="nav-link tm-nav-link" href="#on-sale">On Sale!</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="#items">Items</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -61,7 +65,7 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                 </div>
             </div>
-            <div class="tm-welcome-container text-center text-white">
+            <div class="tm-welcome-container text-center text-white" id="home">
                 <div class="tm-welcome-container-inner">
                     <p class="tm-welcome-text mb-1 text-white">Video Catalog is brought to you by TemplateMo.</p>
                     <p class="tm-welcome-text mb-5 text-white">This is a full-width video banner.</p>
@@ -102,7 +106,25 @@ https://templatemo.com/tm-552-video-catalog
             </div>
         </div> -->
 
-        <div class="conatiner-fluid">
+        <div class="container-fluid px-0" id="about">
+            <div class="mx-auto tm-content-container">					
+                <div class="row mt-3 mb-5 pb-3">
+                    <div class="col-12">
+                        <div class="mx-auto tm-about-text-container px-3">
+                            <h2 class="tm-page-title mb-4 tm-text-primary">About the Video Catalog</h2>
+                            <p class="mb-4">Video Catalog is free HTML CSS template for your website. This Bootstrap v4.4.1 website template is 100% free download for everyone. You can modify and expand this template for your CMS websites. You can use it for commercial or non-commercial work. If you wish to support <a href="https://templatemo.com" class="tm-text-primary">TemplateMo</a>, please contact us.</p>
+                            <p class="mb-4">You are <u>not allowed</u> to re-distribute the template ZIP file on any template collection website.</p>
+                            <p class="mb-4">Vivamus sit amet justo sed erat iaculis consequat. Nulla suscipit posuere lectus ut venenatis. Proin sed orci eget tellus euismod vulputate eu eu arcu. Etiam a bibendum lorem. Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut tincidunt mi congue quis.</p>
+                            <p class="mb-0">Phasellus luctus orci dolor, a luctus massa tincidunt vitae. Integer sit amet odio id libero tincidunt dignissim in eget arcu. Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. Cras duismod leo a urna placerat, vel blandit turpis fermentum.</p>	
+                        </div>							
+                    </div>						
+                </div>					
+            </div>
+
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/about-2.jpg"></div>
+        </div>
+
+        <div class="conatiner-fluid" id="on-sale">
             <div id="content" class="mx-auto tm-content-container">
                 <div>
                     <div class="row">
@@ -178,29 +200,34 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                 </div>
             </div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/about-3.jpg"></div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="items">
             <div id="content" class="mx-auto tm-content-container">
-                <main>
+                <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="tm-page-title mb-4">Our Video Catalog</h2>
                             <div class="tm-categories-container mb-5">
                                 <h3 class="tm-text-primary tm-categories-text">Categories:</h3>
-                                <ul class="nav tm-category-list">
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link active">All</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Drone Shots</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Nature</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Actions</a></li>
-                                    <li class="nav-item tm-category-item"><a href="#" class="nav-link tm-category-link">Featured</a></li>
+                                <ul class="nav tm-category-list item-tab" id="item-links-div">
+                                    <li class="nav-item tm-category-item item-links" style="cursor: pointer;" id="defaultOpenItem" onclick="itemSwitcher(event, 'all')">All</li> <!--<a href="#" class="nav-link tm-category-link active" ></a>-->
+                                    <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'sale')">Drone Shots</li> <!--<a href="#" class="nav-link tm-category-link active" ></a>-->
+                                    <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'page-3')">Nature</li> <!--<a href="#" class="nav-link tm-category-link active" ></a>-->
+                                    <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'page-4')">Actions</li> <!--<a href="#" class="nav-link tm-category-link active" ></a>-->
+                                    <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'page-5')">Featured</li> <!--<a href="#" class="nav-link tm-category-link active" ></a>-->
+                                    <!-- <li class="nav-item tm-category-item item-links"><a href="#" class="nav-link tm-category-link">Drone Shots</a></li>
+                                    <li class="nav-item tm-category-item item-links"><a href="#" class="nav-link tm-category-link">Nature</a></li>
+                                    <li class="nav-item tm-category-item item-links"><a href="#" class="nav-link tm-category-link">Actions</a></li>
+                                    <li class="nav-item tm-category-item item-links"><a href="#" class="nav-link tm-category-link">Featured</a></li> -->
                                 </ul>
                             </div>        
                         </div>
                     </div>
                     
-                    <div class="row tm-catalog-item-list">
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                    <div class="row tm-catalog-item-list item-content" id="all">
+                        <div class="col tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
@@ -215,7 +242,7 @@ https://templatemo.com/tm-552-video-catalog
                                     This can be a large catalog.</p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="col tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
@@ -228,7 +255,7 @@ https://templatemo.com/tm-552-video-catalog
                                     <span class="tm-text-secondary">font-family: 'Source Sans Pro', sans-serif; for this template.</span></p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="col tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="video-page.html" class="position-absolute tm-img-overlay">
@@ -241,6 +268,8 @@ https://templatemo.com/tm-552-video-catalog
                                 Please do not make a re-distribution of our template ZIP file on any template collection website.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="row tm-catalog-item-list item-content" id="sale">
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
@@ -277,6 +306,8 @@ https://templatemo.com/tm-552-video-catalog
                                 <p class="tm-catalog-item-text">Nunc neque risus, ultrices sed luctus at, iaculis at arcu. Pellentesque rutrum velit nec sapien ullamcorper ultrices. Vestibulum lectus risus, laoreet pretium ipsum</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="row tm-catalog-item-list item-content" id="page-3">
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                             <div class="position-relative tm-thumbnail-container">
                                 <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
@@ -366,13 +397,13 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                 </div> row -->
 
-                <!-- <footer class="row pt-5"> -->
-                    <!-- <div class="col-12">
+                <footer class="row pt-5"> 
+                    <div class="col-12">
                         <p class="text-right">Copyright 2020 The Video Catalog Company 
                         
                         - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
-                    </div> -->
-                <!-- </footer> -->
+                    </div>
+                </footer>
                 
             </div> <!-- tm-content-container -->
         </div>
@@ -381,6 +412,8 @@ https://templatemo.com/tm-552-video-catalog
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <script>
         function setVideoSize() {
             const vidWidth = 1920;
@@ -412,7 +445,13 @@ https://templatemo.com/tm-552-video-catalog
             tmVideo.css('margin-top', marginTop);
         }
 
+        $(window).on('load', function(){
+            /************** change url ****************/
+            window.history.pushState({}, document.title, "/#home");
+        });
+
         $(document).ready(function () {
+            window.history.replaceState({}, document.title, "/#home");
             /************** Video background *********/
 
             setVideoSize();
