@@ -14,11 +14,8 @@
     <script src="./ourscripts/gallery.js" defer></script>
     <link rel="stylesheet" href="./ourcss/gallery.css">
 <!--
-
 TemplateMo 552 Video Catalog
-
 https://templatemo.com/tm-552-video-catalog
-
 -->
 </head>
 
@@ -107,15 +104,17 @@ https://templatemo.com/tm-552-video-catalog
 
         <div class="conatiner-fluid">
             <div id="content" class="mx-auto tm-content-container">
-                <main>
+                <div>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="gallery-tab" id="gallery-links-div" style="text-align: center; left: auto; right: auto; display: flex;"> 
-                                <p class="gallery-links" onclick="gallerySwitcher(event, 'sale')" id="defaultOpenGallery">Page 1</p>
-                                <p class="gallery-links" onclick="gallerySwitcher(event, 'men')">Page 2</p>
+                        <div class="col-md-12">
+                            <div class="gallery-tab" id="gallery-links-div" style="width: 100%; text-align: center; left: auto; right: auto; display: inline-flex;"> 
+                                <p class="gallery-links" onclick="gallerySwitcher(event, 'sale')" id="defaultOpenGallery" style="width: 50%;">Page 1</p>
+                                <p class="gallery-links" onclick="gallerySwitcher(event, 'men')" style="width: 50%;">Page 2</p>
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
                             <div id="sale" class="gallery-content">
                                 <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
@@ -146,36 +145,38 @@ https://templatemo.com/tm-552-video-catalog
                                     </div>
                                 </div>
                             </div>
-                            <div id="men" class="gallery-content">
-                                <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                                    <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                        <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                            <i class="fas fa-play tm-overlay-icon"></i>
-                                        </a>
-                                    </div>                            
-                                    <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                        <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sagittis sodales enim</h3>
-                                        <p class="tm-catalog-item-text">You are allowed to use this video catalog for your business websites. 
-                                        Please do not make a re-distribution of our template ZIP file on any template collection website.</p>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="men" class="gallery-content">
+                            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                                <div class="position-relative tm-thumbnail-container">
+                                    <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                    <a href="video-page.html" class="position-absolute tm-img-overlay">
+                                        <i class="fas fa-play tm-overlay-icon"></i>
+                                    </a>
+                                </div>                            
+                                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                    <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Sagittis sodales enim</h3>
+                                    <p class="tm-catalog-item-text">You are allowed to use this video catalog for your business websites. 
+                                    Please do not make a re-distribution of our template ZIP file on any template collection website.</p>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                                    <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                        <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                            <i class="fas fa-play tm-overlay-icon"></i>
-                                        </a>
-                                    </div>    
-                                    <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                        <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Nam tincidunt consectetur</h3>
-                                        <p class="tm-catalog-item-text">You can apply this template for your commercial CMS theme. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
-                                    </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                                <div class="position-relative tm-thumbnail-container">
+                                    <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                    <a href="video-page.html" class="position-absolute tm-img-overlay">
+                                        <i class="fas fa-play tm-overlay-icon"></i>
+                                    </a>
+                                </div>    
+                                <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                                    <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Nam tincidunt consectetur</h3>
+                                    <p class="tm-catalog-item-text">You can apply this template for your commercial CMS theme. Nam sem leo, imperdiet non lacinia eget, volutpat ac massa. Donec mattis in velit quis commodo. Cras nec rutrum arcu.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </main>
+                </div>
             </div>
         </div>
 
@@ -365,13 +366,14 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                 </div> row -->
 
-                <footer class="row pt-5">
-                    <div class="col-12">
+                <!-- <footer class="row pt-5"> -->
+                    <!-- <div class="col-12">
                         <p class="text-right">Copyright 2020 The Video Catalog Company 
                         
                         - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
-                    </div>
-                </footer>
+                    </div> -->
+                <!-- </footer> -->
+                
             </div> <!-- tm-content-container -->
         </div>
 
