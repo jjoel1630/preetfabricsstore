@@ -16,7 +16,7 @@ const gallerySwitcher = (evt, menuSection) => {
   //get the display id which will be each different page, but we are only displaying the one we pass in
   document.querySelector(`#${menuSection}`).style.display = "block";
   //give the targeted button an active class
-  evt.currentTarget.className += " item-links-active";
+  evt.currentTarget.className += " tab-links-active";
 }
 
 //when the page loads, automatically open the defualt one
