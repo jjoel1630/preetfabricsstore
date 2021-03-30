@@ -1,3 +1,27 @@
-/* .sticky-nav {
-	position: sticky;
+@media (max-width: 575px) {
+	.tm-catalog-item {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* body {
+		background-color: red;
+	} */
+}
+
+/* @media (min-width: 1440px) {
+	body {
+		background-color: red;
+	}
 } */
+
+/* 575 x 648 */
+/* 1440 x 968 */
+
+.tm-catalog-item {
+	margin-bottom: 2rem;
+}
+
+.gallery-content,
+.item-content {
+	margin: auto;
+}
