@@ -27,7 +27,7 @@ https://templatemo.com/tm-552-video-catalog
         }
         /* width */
         ::-webkit-scrollbar {
-            width: 10px;
+            /* width: 10px; */
         }
 
         /* Track */
@@ -58,16 +58,39 @@ https://templatemo.com/tm-552-video-catalog
         <div class="position-relative">
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative">
-                    <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style=" background-color: transparent;">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                      
+                        <div class="collapse navbar-collapse " id="navbarTogglerDemo03" style="justify-content: center; ">
+                            <ul class="nav justify-content-center navbar-nav-scroll">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                              </ul>
+                        </div>
+                      </nav>
+                    <!-- <div class="row"> -->
                         <!-- <div class="col-7 col-md-4">
                             <a href="index.html" class="tm-bg-black text-center tm-logo-container">
                                 <i class="fas fa-video tm-site-logo mb-3"></i>
                                 <h1 class="tm-site-name">Video Catalog</h1>
                             </a>
                         </div> -->
-                        <div style="width: 100%; margin-left: 25%; margin-right: 25%;"> <!--ml-auto mr-0-->
-                            <div class="tm-site-nav">
-                                <nav class="navbar navbar-expand-lg " id="tm-main-nav" style="width: 100%;">
+                        <!-- <div> ml-auto mr-0 -->
+                            <!-- <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg " id="tm-main-nav" style="left: 30%; right: 30%;">
                                     <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
                                         data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
                                         aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +99,7 @@ https://templatemo.com/tm-552-video-catalog
                                             <i class="fas fa-times tm-menu-opened-icon"></i>
                                         </span>
                                     </button>
-                                    <div id="navbar-sticky" class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                    <div id="navbar-sticky" class="collapse navbar-collapse tm-nav" id="navbar-nav" style="left: 30%; right: 30%;">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item active">
                                                 <a class="nav-link tm-nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -95,7 +118,7 @@ https://templatemo.com/tm-552-video-catalog
                                 </nav>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="tm-welcome-container text-center text-white" id="home">
@@ -112,13 +135,13 @@ https://templatemo.com/tm-552-video-catalog
                 <video autoplay muted loop id="tm-video">
                     <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
                         <source src="video/wheat-field.mp4" type="video/mp4">
-                </video>    
+                </video>
             </div>
-            
+
             <i id="tm-video-control-button" class="fas fa-pause"></i>
         </div>
         <div class="container-fluid px-0" id="about">
-            <div class="mx-auto tm-content-container">					
+            <div class="mx-auto tm-content-container">
                 <div class="row mt-3 mb-5 pb-3">
                     <div class="col-12">
                         <div class="mx-auto tm-about-text-container px-3">
@@ -126,10 +149,10 @@ https://templatemo.com/tm-552-video-catalog
                             <p class="mb-4">Video Catalog is free HTML CSS template for your website. This Bootstrap v4.4.1 website template is 100% free download for everyone. You can modify and expand this template for your CMS websites. You can use it for commercial or non-commercial work. If you wish to support <a href="https://templatemo.com" class="tm-text-primary">TemplateMo</a>, please contact us.</p>
                             <p class="mb-4">You are <u>not allowed</u> to re-distribute the template ZIP file on any template collection website.</p>
                             <p class="mb-4">Vivamus sit amet justo sed erat iaculis consequat. Nulla suscipit posuere lectus ut venenatis. Proin sed orci eget tellus euismod vulputate eu eu arcu. Etiam a bibendum lorem. Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut tincidunt mi congue quis.</p>
-                            <p class="mb-0">Phasellus luctus orci dolor, a luctus massa tincidunt vitae. Integer sit amet odio id libero tincidunt dignissim in eget arcu. Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. Cras duismod leo a urna placerat, vel blandit turpis fermentum.</p>	
-                        </div>							
-                    </div>						
-                </div>					
+                            <p class="mb-0">Phasellus luctus orci dolor, a luctus massa tincidunt vitae. Integer sit amet odio id libero tincidunt dignissim in eget arcu. Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. Cras duismod leo a urna placerat, vel blandit turpis fermentum.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/about-2.jpg"></div> -->
@@ -140,7 +163,7 @@ https://templatemo.com/tm-552-video-catalog
                 <div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="gallery-tab" id="gallery-links-div" style="width: 100%; text-align: center; left: auto; right: auto; display: inline-flex;"> 
+                            <div class="gallery-tab" id="gallery-links-div" style="width: 100%; text-align: center; left: auto; right: auto; display: inline-flex;">
                                 <p class="gallery-links" onclick="gallerySwitcher(event, 'sale')" id="defaultOpenGallery" style="width: 50%;">Page 1</p>
                                 <p class="gallery-links" onclick="gallerySwitcher(event, 'men')" style="width: 50%;">Page 2</p>
                             </div>
@@ -152,32 +175,32 @@ https://templatemo.com/tm-552-video-catalog
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                                     </div>
                                 </div>
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                                     </div>
                                 </div>
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>    
+                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
@@ -186,13 +209,13 @@ https://templatemo.com/tm-552-video-catalog
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -203,32 +226,32 @@ https://templatemo.com/tm-552-video-catalog
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                                     </div>
                                 </div>
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                                     </div>
                                 </div>
                                 <!-- 1 picture -->
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>    
+                                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
@@ -237,13 +260,13 @@ https://templatemo.com/tm-552-video-catalog
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                                 <div class="col-sm tm-catalog-item">
                                     <div class="position-relative tm-thumbnail-container">
-                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                    </div>                            
+                                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +291,7 @@ https://templatemo.com/tm-552-video-catalog
                                     <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'page-4')">Actions</li>
                                     <li class="nav-item tm-category-item item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'page-5')">Featured</li>
                                 </ul>
-                            </div>        
+                            </div>
                         </div>
                     </div>
                 </main>
@@ -283,37 +306,37 @@ https://templatemo.com/tm-552-video-catalog
                     <!-- 1 picture -->
                     <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
                     </div>
                     <!-- 1 picture -->
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
                     </div>
                     <!-- 1 picture -->
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>    
+                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
@@ -322,18 +345,18 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -341,35 +364,35 @@ https://templatemo.com/tm-552-video-catalog
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>    
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                            <img src="img/tn-04.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-05.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="img/tn-06.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>    
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
                     </div>
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>                            
+                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
+                    </div>
+                    <div class="col-sm tm-catalog-item">
+                        <div class="position-relative tm-thumbnail-container">
+                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -377,8 +400,8 @@ https://templatemo.com/tm-552-video-catalog
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                        </div>    
+                            <img src="img/tn-07.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
@@ -387,7 +410,7 @@ https://templatemo.com/tm-552-video-catalog
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
+                            <img src="img/tn-09.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
                     </div>
                 </div>
@@ -395,9 +418,9 @@ https://templatemo.com/tm-552-video-catalog
                     <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
                             <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>    
+                        </div>
                     </div>
-                    <div class="col-sm tm-catalog-item"> 
+                    <div class="col-sm tm-catalog-item">
                         <div class="position-relative tm-thumbnail-container">
                             <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                         </div>
@@ -421,10 +444,10 @@ https://templatemo.com/tm-552-video-catalog
                 </ul>
             </div> -->
 
-            <footer class="row pt-5"> 
+            <footer class="row pt-5">
                 <div class="col-12">
-                    <p class="text-right">Copyright 2020 The Video Catalog Company 
-                    
+                    <p class="text-right">Copyright 2020 The Video Catalog Company
+
                     - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
                 </div>
             </footer>
@@ -485,7 +508,7 @@ https://templatemo.com/tm-552-video-catalog
                 timeout = setTimeout(setVideoSize, 100);
             };
 
-            // Play/Pause button for video background      
+            // Play/Pause button for video background
             const btn = $("#tm-video-control-button");
 
             btn.on("click", function (e) {
