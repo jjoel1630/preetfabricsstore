@@ -8,11 +8,17 @@
 	} */
 }
 
-/* @media (min-width: 1440px) {
-	body {
-		background-color: red;
+@media (min-width: 1440px) {
+	.gallery-content {
+		margin: auto;
 	}
-} */
+}
+@media (max-width: 1439px) {
+	.gallery-content {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
 
 /* 575 x 648 */
 /* 1440 x 968 */
@@ -21,7 +27,6 @@
 	margin-bottom: 2rem;
 }
 
-.gallery-content,
 .item-content {
 	margin: auto;
 }
