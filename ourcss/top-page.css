@@ -1,13 +1,17 @@
+/* root (variables, and scroll padding for the navbar) */
 :root {
 	--discover-button-top: 70%;
 	--discover-button-left: 50%;
 	--title-text-div-top: 42%;
 	--title-text-div-left: 50%;
+	--navbar-responsive-toggle-bar-height: 3px;
+	--navbar-responsive-toggle-bar-width: 35px;
 
 	scroll-padding-top: 5px;
 	scroll-behavior: smooth;
 }
 
+/* main page div (has the background img, etc) */
 .main-page-div {
 	background-image: url("../img/mainhomepage2.jpeg");
 	background-repeat: no-repeat;
@@ -67,8 +71,34 @@
 		display: none;
 	}
 
+	.navbar-responsive-toggle-bar {
+		background-color: white;
+		width: var(--navbar-responsive-toggle-bar-width);
+		height: var(--navbar-responsive-toggle-bar-height);
+		margin: 8px;
+	}
+
+	.navbar-responsive-toggle-bar-1 {
+		transform: rotate(-45deg) translate(-8px, 7px);
+		transition: all 0.3s ease;
+	}
+
+	.navbar-responsive-toggle-bar-2 {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 0.2s, opacity 0.2s linear;
+	}
+
+	.navbar-responsive-toggle-bar-3 {
+		transform: rotate(45deg) translate(-8px, -7px);
+		transition: all 0.3s ease;
+	}
+
 	#navbar-responsive-toggle {
 		display: block;
+		position: absolute;
+		z-index: 100;
+		right: 0;
 	}
 
 	.navbar-div-responsive {
@@ -82,12 +112,28 @@
 		animation-duration: 0.6s;
 	}
 
+	.nav-ul-responsive {
+		list-style: none;
+		margin: 2rem;
+		padding: 2rem;
+	}
+
 	@keyframes open-nav {
 		0% {
 			width: 0;
 		}
 		100% {
 			width: 100%;
+		}
+	}
+
+	@keyframes navbar-responsive-toggle-bar-2 {
+		0% {
+			opacity: 100%;
+		}
+		100% {
+			opacity: 0;
+			display: none;
 		}
 	}
 }
