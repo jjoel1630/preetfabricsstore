@@ -4,9 +4,13 @@
 }
 
 .tab-links-active {
-	background-color: grey;
+	background-color: lightblue;
+
+	/* background-color: grey; */
 }
 
 .item-links-active {
-	background-color: grey;
+	/* background-color: grey; */
+	background-color: lightblue;
+
 }

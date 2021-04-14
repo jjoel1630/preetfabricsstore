@@ -35,11 +35,14 @@
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	font-size: 3ch;
+	font-size: 2ch;
+	
 }
 
 .nav-li {
 	list-style: none;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 	text-decoration: none;
 	display: inline-block;
 	margin: 10px;
@@ -52,10 +55,25 @@
 
 .navbar-div.sticky-nav {
 	position: fixed;
-	padding-top: 0px;
+	font-size: 2ch;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	z-index: 999;
 	transition: background-color 0.2s ease-in-out;
-	background-color: red;
+	background-color: teal;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.navbar-div.sticky-nav > .nav-ul > .nav-li > a{
+	color: #5cf2e3;
+}
+.navbar-div.sticky-nav > .nav-ul > .nav-li > a:hover{
+	color: #2ec972;
+}
+.navbar-div.sticky-nav > .nav-ul > .nav-li{
+	
+	text-align: center;
 }
 
 .navbar-div-responsive {
