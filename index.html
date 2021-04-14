@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Catalog</title>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
-
     <link rel="stylesheet" href="./ourcss/pages.css" type="text/css">
     <link rel="stylesheet" href="./ourcss/index.css" type="text/css">
     <script src="./ourscripts/gallery.js" defer></script>
@@ -21,10 +22,50 @@
 TemplateMo 552 Video Catalog
 https://templatemo.com/tm-552-video-catalog
 -->
+
+<style>
+
+.nav-li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.main-page-div {
+    background-image: url("img/mainhomepage2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.nav-li:hover {
+    color: lightblue;
+}
+
+.discover-button:hover {
+    color: lightblue;
+}
+</style>
 </head>
 
 <body>
-    <div class="tm-page-wrap mx-auto">
+    <div class="main-page-div" style="color: teal; width: 100vw; height: 100vh; ">
+        <div style="text-align: center; width: 100%; padding-top: 2.2rem;">
+            <ul style="display: inline-block; margin: 0; padding: 0; font-size: 3ch;">
+                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Home</li>
+                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">About</li>
+                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Gallery</li>
+                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Contact</li>
+                <!-- <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">hello</li> -->
+            </ul>
+        </div>
+        <div style="text-align: center; width: 30vw; position: absolute; top: 42%; left: 50%; transform: translate(-50%, -42%);">
+            <h1 style="font-size: 5ch;">Preet Fabrics</h1>
+        </div>
+        <button onclick="location.href='https://www.google.com';"  target=_blank style="cursor: pointer; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -70%); background-color: teal;" class="btn p-3 discover-button">Discover</button>
+    </div>
+    <!-- <div class="tm-page-wrap mx-auto">
         <div class="position-relative">
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative">
@@ -49,7 +90,7 @@ https://templatemo.com/tm-552-video-catalog
                           </ul>
                         </div>
                     </nav>
-                    <!-- <div class="row"> -->
+                    <div class="row"> -->
                         <!-- <div class="col-7 col-md-4">
                             <a href="index.html" class="tm-bg-black text-center tm-logo-container">
                                 <i class="fas fa-video tm-site-logo mb-3"></i>
@@ -87,7 +128,7 @@ https://templatemo.com/tm-552-video-catalog
                             </div>
                         </div>
                     </div> -->
-                </div>
+                <!-- </div>
             </div>
             <div class="tm-welcome-container text-center text-white" id="home">
                 <div class="tm-welcome-container-inner">
@@ -101,13 +142,13 @@ https://templatemo.com/tm-552-video-catalog
 
             <div id="tm-video-container">
                 <video autoplay muted loop id="tm-video">
-                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                        <source src="video/wheat-field.mp4" type="video/mp4">
-                </video>
-            </div>
+                    <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
+                        <!-- <source src="video/wheat-field.mp4" type="video/mp4"> -->
+                <!-- </video>
+            </div> -->
 
-            <i id="tm-video-control-button" class="fas fa-pause"></i>
-        </div>
+            <!-- <i id="tm-video-control-button" class="fas fa-pause"></i>
+        </div> --> 
         <div class="container-fluid px-0" id="about">
             <div class="mx-auto tm-content-container">
                 <div class="row mt-3 mb-5 pb-3">
