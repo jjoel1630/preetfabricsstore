@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Catalog</title>
+
     <!-- https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -14,56 +15,45 @@
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
     <link rel="stylesheet" href="./ourcss/pages.css" type="text/css">
     <link rel="stylesheet" href="./ourcss/index.css" type="text/css">
+    <link rel="stylesheet" href="./ourcss/top-page.css" type="text/css">
+
     <script src="./ourscripts/gallery.js" defer></script>
     <script src="./ourscripts/items.js" defer></script>
-    <script src="./ourscripts/test.js" defer></script>
-    <!-- <script src="./ourscripts/nav.js" defer></script> -->
+    <!-- <script src="./ourscripts/test.js" defer></script> -->
+    <script src="./ourscripts/nav.js" defer></script>
+
 <!--
 TemplateMo 552 Video Catalog
 https://templatemo.com/tm-552-video-catalog
 -->
-
-<style>
-
-.nav-li {
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-}
-
-.main-page-div {
-    background-image: url("img/mainhomepage2.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-}
-
-.nav-li:hover {
-    color: lightblue;
-}
-
-.discover-button:hover {
-    color: lightblue;
-}
-</style>
 </head>
 
 <body>
-    <div class="main-page-div" style="color: teal; width: 100vw; height: 100vh; ">
-        <div style="text-align: center; width: 100%; padding-top: 2.2rem;">
-            <ul style="display: inline-block; margin: 0; padding: 0; font-size: 3ch;">
-                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Home</li>
-                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">About</li>
-                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Gallery</li>
-                <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">Contact</li>
-                <!-- <li onclick="location.href='https://www.google.com';"  target=_blank class="nav-li" style="cursor: pointer;">hello</li> -->
+    <div class="main-page-div">
+        <div class="navbar-div" id="navbar-sticky">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#home">Home</a></li>
+                <li class="nav-li"><a href="#about">About</a></li>
+                <li class="nav-li"><a href="#on-sale">On Sale</a></li>
+                <li class="nav-li"><a href="#items">Items</a></li>
             </ul>
         </div>
-        <div style="text-align: center; width: 30vw; position: absolute; top: 42%; left: 50%; transform: translate(-50%, -42%);">
-            <h1 style="font-size: 5ch;">Preet Fabrics</h1>
+
+        <button id="navbar-responsive-toggle">nav</button>
+        <div class="title-text-div">
+            <h1 class="title-text">Preet Fabrics</h1>
         </div>
-        <button onclick="location.href='https://www.google.com';"  target=_blank style="cursor: pointer; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -70%); background-color: teal;" class="btn p-3 discover-button">Discover</button>
+        <form action="#about">
+            <button class="btn p-3 discover-button">Discover</button>
+        </form>
+        <div class="navbar-div-responsive">
+            <ul class="nav-ul-responsive">
+                <li class="nav-li-responsive"><a href="#home">Home</a></li>
+                <li class="nav-li-responsive"><a href="#about">About</a></li>
+                <li class="nav-li-responsive"><a href="#on-sale">On Sale</a></li>
+                <li class="nav-li-responsive"><a href="#items">Items</a></li>
+            </ul>
+        </div>
     </div>
     <!-- <div class="tm-page-wrap mx-auto">
         <div class="position-relative">
@@ -167,7 +157,7 @@ https://templatemo.com/tm-552-video-catalog
             <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/about-2.jpg"></div> -->
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="on-sale">
             <div class="mx-auto tm-content-container" id="content">
                 <div>
                     <div class="row">
@@ -182,7 +172,7 @@ https://templatemo.com/tm-552-video-catalog
             </div>
         </div>
 
-        <div class="container-fluid" id="on-sale">
+        <div class="container-fluid" >
             <div class="row">
                 <div id="sale" class="gallery-content">
                     <div class="row">
