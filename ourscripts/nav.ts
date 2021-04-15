@@ -19,6 +19,12 @@ document.addEventListener("scroll", function () {
   
     if (distanceFromTop >= navbarHeight) navbar.classList.add("sticky-nav");
     else navbar.classList.remove("sticky-nav");
+
+    const burger = document.querySelector<HTMLElement>("#navbar-responsive-toggle");
+    const burgerHeight = 30;
+
+    if (distanceFromTop >= burgerHeight) burger.classList.add("sticky-nav");
+    else burger.classList.remove("sticky-nav");
 });
 
 const navbarToggle = document.querySelector<HTMLElement>("#navbar-responsive-toggle");
@@ -36,3 +42,21 @@ navbarToggle.addEventListener("click", () => {
         document.querySelector("#navbar-responsive-toggle-bar-3").classList.remove("navbar-responsive-toggle-bar-3");
     }
 })
+
+
+// const burger = document.querySelector<HTMLElement>(".burger");
+// const nav = document.querySelector<HTMLElement>(".nav-links");
+// const navLinks = document.querySelectorAll<HTMLElement>(".nav-links li");
+
+// burger.addEventListener("click", () => {
+//     nav.classList.toggle("nav-active");
+//     navLinks.forEach((link, index) => {
+//         if(link.style.animation) {
+//             link.style.animation = "";
+//         } else {
+//             link.style.animation = `nav-links-appear 0.4s ease forwards ${index / 7 + 0.4}s`;
+//         }
+//     });
+
+//     burger.classList.toggle("toggle");
+// });

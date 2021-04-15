@@ -15,6 +15,12 @@ document.addEventListener("scroll", function () {
         navbar.classList.add("sticky-nav");
     else
         navbar.classList.remove("sticky-nav");
+    var burger = document.querySelector("#navbar-responsive-toggle");
+    var burgerHeight = 30;
+    if (distanceFromTop >= burgerHeight)
+        burger.classList.add("sticky-nav");
+    else
+        burger.classList.remove("sticky-nav");
 });
 var navbarToggle = document.querySelector("#navbar-responsive-toggle");
 var navbarDivResponsive = document.querySelector(".navbar-div-responsive");
@@ -32,3 +38,17 @@ navbarToggle.addEventListener("click", function () {
         document.querySelector("#navbar-responsive-toggle-bar-3").classList.remove("navbar-responsive-toggle-bar-3");
     }
 });
+// const burger = document.querySelector<HTMLElement>(".burger");
+// const nav = document.querySelector<HTMLElement>(".nav-links");
+// const navLinks = document.querySelectorAll<HTMLElement>(".nav-links li");
+// burger.addEventListener("click", () => {
+//     nav.classList.toggle("nav-active");
+//     navLinks.forEach((link, index) => {
+//         if(link.style.animation) {
+//             link.style.animation = "";
+//         } else {
+//             link.style.animation = `nav-links-appear 0.4s ease forwards ${index / 7 + 0.4}s`;
+//         }
+//     });
+//     burger.classList.toggle("toggle");
+// });

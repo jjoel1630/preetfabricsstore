@@ -2,10 +2,23 @@
 :root {
 	--discover-button-top: 70%;
 	--discover-button-left: 50%;
-	--title-text-div-top: 42%;
+	--title-text-div-top: 40%;
 	--title-text-div-left: 50%;
 	--navbar-responsive-toggle-bar-height: 3px;
 	--navbar-responsive-toggle-bar-width: 35px;
+
+	--main-color-300: hsl(189, 90%, 60%);
+	--main-color-350: hsl(189, 90%, 50%);
+	--main-color-400: hsl(189, 90%, 40%);
+	--main-color-450: hsl(189, 90%, 30%);
+	--main-color-500: hsl(189, 90%, 20%);
+	--main-color-550: hsl(189, 90%, 10%);
+	--main-color-600: hsl(189, 90%, 0%);
+
+	--dark-color-500: hsl(186, 50%, 4%);
+	--dark-color-400: hsl(186, 50%, 24%);
+	--dark-color-450: hsl(186, 50%, 34%);
+	--dark-color-300: hsl(186, 50%, 44%);
 
 	scroll-padding-top: 5px;
 	scroll-behavior: smooth;
@@ -13,11 +26,10 @@
 
 /* main page div (has the background img, etc) */
 .main-page-div {
-	background-image: url("../img/mainhomepage2.jpeg");
+	background-image: url("../img/mainphoto-3.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	color: teal;
 	width: 100vw;
 	height: 100vh;
 }
@@ -36,7 +48,6 @@
 	margin: 0;
 	padding: 0;
 	font-size: 2ch;
-	
 }
 
 .nav-li {
@@ -49,8 +60,12 @@
 	cursor: pointer;
 }
 
-.nav-li:hover {
-	color: lightblue;
+.nav-li a {
+	color: var(--dark-color-500);
+}
+
+.nav-li a:hover {
+	color: var(--main-color-400);
 }
 
 .navbar-div.sticky-nav {
@@ -60,19 +75,26 @@
 	padding-bottom: 5px;
 	z-index: 999;
 	transition: background-color 0.2s ease-in-out;
-	background-color: teal;
+	background-color: var(--main-color-400);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
-.navbar-div.sticky-nav > .nav-ul > .nav-li > a{
-	color: #5cf2e3;
+
+#navbar-responsive-toggle.sticky-nav {
+	position: fixed;
+	/* padding-top: 5px; */
+	padding-bottom: 5px;
+	z-index: 999;
 }
-.navbar-div.sticky-nav > .nav-ul > .nav-li > a:hover{
-	color: #2ec972;
+
+.navbar-div.sticky-nav > .nav-ul > .nav-li > a {
+	color: var(--dark-color-500);
 }
-.navbar-div.sticky-nav > .nav-ul > .nav-li{
-	
+.navbar-div.sticky-nav > .nav-ul > .nav-li > a:hover {
+	color: var(--dark-color-450);
+}
+.navbar-div.sticky-nav > .nav-ul > .nav-li {
 	text-align: center;
 }
 
@@ -84,13 +106,13 @@
 	display: none;
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 671px) {
 	.navbar-div {
 		display: none;
 	}
 
 	.navbar-responsive-toggle-bar {
-		background-color: white;
+		background-color: teal;
 		width: var(--navbar-responsive-toggle-bar-width);
 		height: var(--navbar-responsive-toggle-bar-height);
 		margin: 8px;
@@ -120,10 +142,11 @@
 	}
 
 	.navbar-div-responsive {
-		background-color: black;
+		background-color: teal;
 		height: 100vh;
 		width: 100vw;
 		position: absolute;
+		margin-bottom: 2rem;
 		z-index: 10;
 		right: 0;
 		animation-name: open-nav;
@@ -132,6 +155,11 @@
 
 	.nav-ul-responsive {
 		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 		margin: 2rem;
 		padding: 2rem;
 	}
@@ -158,7 +186,7 @@
 
 .title-text-div {
 	text-align: center;
-	width: 30vw;
+	width: 100vw;
 	position: absolute;
 	top: var(--title-text-div-top);
 	left: var(--title-text-div-left);
@@ -169,17 +197,7 @@
 }
 
 .title-text {
-	font-size: 5ch;
-}
-
-@media screen and (max-width: 520px) {
-	.title-text {
-		font-size: 10vw;
-	}
-
-	.title-text-div {
-		width: 30vw;
-	}
+	font-size: 10ch;
 }
 
 .discover-button {
@@ -191,9 +209,30 @@
 		calc(-1 * var(--discover-button-left)),
 		calc(-1 * var(--discover-button-top))
 	);
-	background-color: teal;
+	background-color: var(--main-color-400);
+	padding: 0.4em 0.5em 0.4em 0.5em;
+	border-radius: 0.4rem;
+	border: none;
+	outline: none;
 }
 
-.discover-button:hover {
-	color: lightblue;
+.discover-button:focus {
+	outline: none;
+	border: none;
+}
+
+@media screen and (max-width: 380px) {
+	.title-text {
+		font-size: 8ch;
+	}
+
+	.discover-button {
+		position: absolute;
+		top: calc(-1 * (var(--discover-button-top) - 127%));
+		left: var(--discover-button-left);
+		transform: translate(
+			calc(-1 * var(--discover-button-left)),
+			calc(-1 * (var(--discover-button-top) - 127%))
+		);
+	}
 }
