@@ -1,4 +1,4 @@
-var gallerySwitcher = function (evt, menuSection) {
+const gallerySwitcher = (evt, menuSection) => {
     //gallery-content = each page
     var galleryContent = document.querySelectorAll(".gallery-content");
     //display none to each of the pages so we can display the correct one
@@ -12,7 +12,7 @@ var gallerySwitcher = function (evt, menuSection) {
         galleryLinks[i].className = galleryLinks[i].className.replace(" tab-links-active", "");
     }
     //get the display id which will be each different page, but we are only displaying the one we pass in
-    document.querySelector("#" + menuSection).style.display = "block";
+    document.querySelector(`#${menuSection}`).style.display = "block";
     //give the targeted button an active class
     evt.currentTarget.className += " tab-links-active";
 };
