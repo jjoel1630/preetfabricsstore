@@ -1,4 +1,3 @@
-
 @media (max-width: 575px) {
 	.tm-catalog-item {
 		margin-left: auto;
@@ -30,4 +29,12 @@
 
 .item-content {
 	margin: auto;
+}
+
+.grid-onsale {
+	display: grid;
+	height: 50px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
 }

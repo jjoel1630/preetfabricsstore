@@ -107,10 +107,46 @@
 }
 
 @media screen and (max-width: 804px) {
+	/* display none to the normal div */
 	.navbar-div {
 		display: none;
 	}
 
+	/* give a simple margin to the burger */
+	#navbar-responsive-toggle {
+		display: block;
+		position: absolute;
+		z-index: 100;
+		right: 0;
+		margin-top: 0.4rem;
+		margin-right: 0.8rem;
+	}
+
+	/* style the navbar div */
+	.navbar-div-responsive {
+		background-color: teal;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		margin-bottom: 2rem;
+		z-index: 10;
+		right: 0;
+		animation-name: open-nav;
+		animation-duration: 0.6s;
+	}
+
+	/* style the navbar ul */
+	.nav-ul-responsive {
+		list-style: none;
+		display: flex;
+		padding: 0;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* style the burger lines */
 	.navbar-responsive-toggle-bar {
 		background-color: teal;
 		width: var(--navbar-responsive-toggle-bar-width);
@@ -119,11 +155,7 @@
 		/* margin-top: 1rem; */
 	}
 
-	#navbar-responsive-toggle {
-		margin-top: 0.4rem;
-		margin-right: 0.8rem;
-	}
-
+	/* animate each indiviual burger line */
 	.navbar-responsive-toggle-bar-1 {
 		transform: rotate(-45deg) translate(-8px, 7px);
 		background-color: black;
@@ -142,68 +174,12 @@
 		transition: all 0.3s ease;
 	}
 
-	/* .navbar-responsive-toggle-bar-1-reverse {
-		transform: rotate(45deg) translate(-8px, 7px);
-		background-color: teal;
-		transition: all 0.3s ease;
-	}
-
-	.navbar-responsive-toggle-bar-2-reverse {
-		opacity: 1;
-	}
-
-	.navbar-responsive-toggle-bar-3-reverse {
-		transform: rotate(-45deg) translate(-8px, -7px);
-		background-color: teal;
-		transition: all 0.3s ease;
-	} */
-
-	#navbar-responsive-toggle {
-		display: block;
-		position: absolute;
-		z-index: 100;
-		right: 0;
-	}
-
-	.navbar-div-responsive {
-		background-color: teal;
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		margin-bottom: 2rem;
-		z-index: 10;
-		right: 0;
-		animation-name: open-nav;
-		animation-duration: 0.6s;
-	}
-
-	.nav-ul-responsive {	
-		list-style: none;
-		display: flex;
-		padding: 0;
-		height: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		
-	}
-
 	@keyframes open-nav {
 		0% {
 			width: 0;
 		}
 		100% {
 			width: 100%;
-		}
-	}
-
-	@keyframes navbar-responsive-toggle-bar-2 {
-		0% {
-			opacity: 100%;
-		}
-		100% {
-			opacity: 0;
-			display: none;
 		}
 	}
 }

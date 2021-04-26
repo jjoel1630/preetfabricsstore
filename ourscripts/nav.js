@@ -22,6 +22,8 @@ document.addEventListener("scroll", function () {
     else
         burger.classList.remove("sticky-nav");
 });
+
+
 var navbarToggle = document.querySelector("#navbar-responsive-toggle");
 var navbarDivResponsive = document.querySelector(".navbar-div-responsive");
 navbarToggle.addEventListener("click", function () {
