@@ -20,6 +20,16 @@
 	}
 }
 
+.gallery-content-row {
+	margin-right: 10px;
+	justify-content: space-around;
+}
+
+.gallery-img-size {
+	flex: calc(45 / 200);
+	margin: 2rem;
+}
+
 /* 575 x 648 */
 /* 1440 x 968 */
 

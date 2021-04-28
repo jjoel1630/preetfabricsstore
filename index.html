@@ -9,13 +9,14 @@
     <!-- https://fonts.google.com/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/cdccfc76af.js" defer crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
     <link rel="stylesheet" href="./ourcss/pages.css" type="text/css">
     <link rel="stylesheet" href="./ourcss/index.css" type="text/css">
     <link rel="stylesheet" href="./ourcss/top-page.css" type="text/css">
+    <link rel="stylesheet" href="./ourcss/switchers.css" type="text/css">
 
     <script src="./ourscripts/gallery.js" defer></script>
     <script src="./ourscripts/items.js" defer></script>
@@ -162,114 +163,44 @@ https://templatemo.com/tm-552-video-catalog
         </div>
 
         <div class="container-fluid" id="on-sale">
-            <div class="mx-auto tm-content-container" id="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery-tab" id="gallery-links-div" style="width: 100%; text-align: center; left: auto; right: auto; display: inline-flex;">
-                            <p class="gallery-links" onclick="gallerySwitcher(event, 'sale')" id="defaultOpenGallery" style="width: 50%;">Page 1</p>
-                            <p class="gallery-links" onclick="gallerySwitcher(event, 'men')" style="width: 50%;">Page 2</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="mx-auto tm-content-container" id="content" style="text-align: center;">
+                <h4>On Sale!</h4>
             </div>
         </div>
 
-        <div id="sale" class="gallery-content">
-            <div class="row">
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+        <div class="gallery-content" id="sale">
+            <div class="gallery-content-row">
+                <!-- <div class="col-sm tm-catalog-item">
+                    <div class="position-relative">
+                        <img src="gallery-imgs/image0.jpeg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
+                </div> -->
+                <div>
+                    <img src="gallery-imgs/onsale1.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                    <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy</figcaption>
                 </div>
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
+                <div>
+                    <img src="gallery-imgs/onsale2.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                    <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy</figcaption>
                 </div>
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
+                <div>
+                    <img src="gallery-imgs/onsale3.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                    <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy</figcaption>
                 </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
+                <div>
+                    <img src="gallery-imgs/onsale4.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                    <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy</figcaption>
                 </div>
+                
+                <!-- <img src="gallery-imgs/onsale2.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                <img src="gallery-imgs/onsale3.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                <img src="gallery-imgs/onsale4.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size"> -->
             </div>
-            <div class="row">
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="men" class="gallery-content">
-            <div class="row">
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <!-- 1 picture -->
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
-                <div class="col-sm tm-catalog-item">
-                    <div class="position-relative tm-thumbnail-container">
-                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                    </div>
-                </div>
+            <div class="gallery-content-row">
+                <img src="gallery-imgs/onsale1.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                <img src="gallery-imgs/onsale2.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                <img src="gallery-imgs/onsale3.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
+                <img src="gallery-imgs/onsale4.png" alt="Image" class="img-fluid tm-catalog-item-img gallery-img-size">
             </div>
         </div>
 
@@ -293,249 +224,232 @@ https://templatemo.com/tm-552-video-catalog
             </div>
         </div> 
 
-        <div class="container-fluid">
-            <div class="item-content" id="all">
-                <div class="row">
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+        <div class="item-content" id="all">
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
             </div>
-            <div class="item-content" id="on-sale-items">
-                <div class="row">
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
             </div>
-            <div class="item-content" id="page-3">
-                <div class="row">
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+        </div>
+        <div class="item-content" id="on-sale-items">
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
             </div>
-            <div class="item-content" id="page-4">
-                <div class="row">
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
             </div>
-            <div class="item-content" id="page-5">
-                <div class="row">
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item"> <!--col-lg-4 col-md-6 col-sm-12-->
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <!-- 1 picture -->
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
-                    </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+        </div>
+        <div class="item-content" id="page-3">
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-02.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
-                    <div class="col-sm tm-catalog-item">
-                        <div class="position-relative tm-thumbnail-container">
-                            <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
-                        </div>
+                </div>
+            </div>
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-content" id="page-4">
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+            </div>
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-content" id="page-5">
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+            </div>
+            <div class="item-content-row">
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
+                    </div>
+                </div>
+                <div class="col-sm tm-catalog-item">
+                    <div class="position-relative tm-thumbnail-container">
+                        <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">
                     </div>
                 </div>
             </div>
@@ -572,25 +486,23 @@ https://templatemo.com/tm-552-video-catalog
         <!-- Grid container -->
         <div class="container p-4">
         <!--Grid row-->
-        <h5 class="text-uppercase" style="margin-bottom: 2rem;">Contact Us</h5>
+        <!-- <h5 class="text-uppercase" style="margin-bottom: 2rem;">Contact Us</h5> -->
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0"> <!--col-lg-6 col-md-12-->
-                    <h6 class="text-uppercase">Address</h6>
+                    <h6 class="text-uppercase">Contact Info</h6>
 
             
-                    <ul class="list-unstyled mb-0">
+                    <ul class="list-unstyled mb-0 mt-4">
                         <li>
-                          <a href="#!" class="text-dark">Link 1</a>
+                            <i class="fas fa-phone-alt" style="font-size: 10px;"></i> 
+                            Phone
+                            <p>555-555-5555</p>
                         </li>
                         <li>
-                          <a href="#!" class="text-dark">Link 2</a>
-                        </li>
-                        <li>
-                          <a href="#!" class="text-dark">Link 3</a>
-                        </li>
-                        <li>
-                          <a href="#!" class="text-dark">Link 4</a>
+                            <i class="fas fa-search-location" style="font-size: 10px;"></i> 
+                            Address
+                            <p> 5156 Mowry Ave, Fremont, CA 94538</p>
                         </li>
                     </ul>
                 </div>

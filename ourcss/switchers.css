@@ -1,0 +1,21 @@
+.gallery-content-row,
+.item-content-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .gallery-content-row {
+	margin-right: 10px;
+}
+
+.gallery-content-row:last-child {
+	margin-right: 0;
+} */
+
+@media screen and (max-width: 575px) {
+	.gallery-content-row {
+		flex-direction: column;
+	}
+}
