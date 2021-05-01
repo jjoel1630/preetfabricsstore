@@ -15,7 +15,11 @@
 } */
 
 @media screen and (max-width: 575px) {
-	.gallery-content-row {
+	/* .gallery-content-row {
 		flex-direction: column;
-	}
+	} */
+
+	/* .item-content-row {
+		flex-direction: column;
+	} */
 }

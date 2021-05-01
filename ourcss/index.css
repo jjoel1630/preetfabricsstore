@@ -21,7 +21,7 @@
 }
 
 .gallery-content-row {
-	margin-right: 10px;
+	/* margin-right: 10px; */
 	justify-content: space-around;
 }
 
@@ -45,4 +45,10 @@
 	display: grid;
 	height: 50px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.socials-div {
+	display: flex;
+	margin-top: 8vh;
+	justify-content: space-around;
 }
