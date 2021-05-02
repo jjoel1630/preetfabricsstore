@@ -1,50 +1,67 @@
-@media (max-width: 575px) {
-	.tm-catalog-item {
-		margin-left: auto;
-		margin-right: auto;
-	}
-	/* body {
-		background-color: red;
-	} */
-}
-
-@media (min-width: 1440px) {
-	.gallery-content {
-		margin: auto;
-	}
-}
-@media (max-width: 1439px) {
-	.gallery-content {
-		margin-left: 15px;
-		margin-right: 15px;
-	}
+.gallery-content-row,
+.item-content-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .gallery-content-row {
-	/* margin-right: 10px; */
 	justify-content: space-around;
-}
-
-.gallery-img-size {
-	flex: calc(45 / 200);
-	margin: 2rem;
-}
-
-/* 575 x 648 */
-/* 1440 x 968 */
-
-.tm-catalog-item {
-	margin-bottom: 2rem;
 }
 
 .item-content {
 	margin: auto;
 }
 
-.grid-onsale {
-	display: grid;
-	height: 50px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+.item-content-row {
+	justify-content: space-around;
+}
+
+.gallery-img-size {
+	/* flex: calc(45 / 200); */
+	margin: 0.4rem;
+	height: 80%;
+	width: 80%;
+}
+
+.item-img-size {
+	margin: 0.4rem;
+	height: 80%;
+	width: 80%;
+}
+
+.tm-catalog-item {
+	margin-bottom: 2rem;
+	display: block;
+	text-align: center;
+}
+
+@media screen and (max-width: 804px) {
+	.gallery-content-row {
+		display: block;
+		text-align: center;
+	}
+
+	.gallery-img-size {
+		height: 80%;
+		width: 80%;
+	}
+
+	.item-content-row {
+		display: block;
+		text-align: center;
+	}
+
+	.item-img-size {
+		height: 70%;
+		width: 70%;
+	}
+
+	.tm-catalog-item {
+		max-width: none;
+		display: block;
+	}
 }
 
 .socials-div {
@@ -52,3 +69,44 @@
 	margin-top: 8vh;
 	justify-content: space-around;
 }
+
+/* @media (min-width: 1440px) {
+	.gallery-content {
+		margin: auto;
+	}
+} */
+
+/* @media (max-width: 575px) {
+	.tm-catalog-item {
+		margin-left: auto;
+		margin-right: auto;
+	}
+} */
+
+/* @media (max-width: 1439px) {
+	.gallery-content {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+} */
+
+/* .gallery-content-row {
+	margin-right: 10px;
+}
+
+.gallery-content-row:last-child {
+	margin-right: 0;
+} */
+
+/* @media screen and (max-width: 575px) {
+	.gallery-content-row {
+		flex-direction: column;
+	}
+
+	.item-content-row {
+		flex-direction: column;
+	}
+} */
+
+/* 575 x 648 */
+/* 1440 x 968 */
