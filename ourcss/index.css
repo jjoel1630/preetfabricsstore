@@ -26,8 +26,21 @@
 }
 
 .item-links-active {
-	background-color: grey;
+	padding: 0.3rem;
 	background-color: lightblue;
+	animation: item-links-active-bg 0.6s linear;
+}
+
+@keyframes item-links-active-bg {
+	0% {
+		opacity: 40%;
+	}
+	50% {
+		opacity: 80%;
+	}
+	100% {
+		opacity: 100%;
+	}
 }
 
 .item-img-size {
