@@ -55,7 +55,10 @@ https://templatemo.com/tm-552-video-catalog
         <div class="title-text-div">
             <h1 class="title-text">Preet Fabrics</h1>
         </div>
-        <button class="btn discover-button">Discover</button>
+
+        <form action="#about" onsubmit= event.preventDefault()">
+            <button type="button" class="btn discover-button">Discover</button>
+        </form>
     </div>
     <!-- <div class="tm-page-wrap mx-auto">
         <div class="position-relative">
@@ -148,9 +151,7 @@ https://templatemo.com/tm-552-video-catalog
                         <div class="mx-auto tm-about-text-container px-3">
                             <h2 class="tm-page-title mb-4 tm-text-primary" style="color: teal;">About Preet Fabrics</h2>
                             <p class="mb-4">Founded in xxxx, Preet Fabrics is a local-owned Indian garments and accessories store. The store has been in operation for xx years and has faithfully served customers throughout Fremont and the Greater Bay Area. </p>
-                            <br>
                             <p>Throughout our existence, we have remained committed to satisfying our customers with the best products from India. Therefore, our catalog features some of India's most beautiful garments, such as sarees, kurtas, and bangles. We also carry exquisite jewelry at reasonable costs, along with Indian-brand watches, stereo players, casettes, and kitchen appliances.  </p>
-                            <br>
                             <p>If you are interested in our products, you can find our contact information on our website. Give us a call or come on in, and we will be glad to serve you! </p>
                             <!-- <p class="mb-4">You are <u>not allowed</u> to re-distribute the template ZIP file on any template collection website.</p>
                             <p class="mb-4">Vivamus sit amet justo sed erat iaculis consequat. Nulla suscipit posuere lectus ut venenatis. Proin sed orci eget tellus euismod vulputate eu eu arcu. Etiam a bibendum lorem. Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut tincidunt mi congue quis.</p>
@@ -165,7 +166,8 @@ https://templatemo.com/tm-552-video-catalog
 
         <div class="container-fluid" id="on-sale">
             <div class="mx-auto tm-content-container" id="content" style="text-align: center;">
-                <h4>On Sale!</h4>
+                <!-- <h4>On Sale!</h4> -->
+                <h2 class="tm-page-title section-title">On Sale!</h1>
             </div>
         </div>
 
@@ -201,7 +203,7 @@ https://templatemo.com/tm-552-video-catalog
         </div>
 
         <div class="item-switcher-div" id="items">
-            <h2 class="tm-page-title">Our Products</h2>
+            <h2 class="tm-page-title section-title">Our Products</h2>
             <ul id="item-links-div">
                 <li class="item-links" style="cursor: pointer;" id="defaultOpenItem" onclick="itemSwitcher(event, 'all')">All</li>
                 <li class="item-links" style="cursor: pointer;" onclick="itemSwitcher(event, 'on-sale-items')">Drone Shots</li>

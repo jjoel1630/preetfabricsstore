@@ -52,10 +52,16 @@
 .item-switcher-div {
 	text-align: center;
 	margin-bottom: 2rem;
+	margin-top: 6rem;
+}
+
+.item-switcher-div > h2 {
+	margin-bottom: 2rem;
 }
 
 .item-switcher-div > ul {
 	display: flex;
+	margin-left: 3rem;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
@@ -63,8 +69,17 @@
 	padding: 0;
 }
 
+.item-switcher-div > ul > li:first-child {
+	margin-left: 3rem;
+}
+
 .item-switcher-div > ul > li {
-	margin-right: 3rem;
+	margin-right: 1rem;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 22px;
+	padding: 0;
+	width: 8rem;
 }
 
 .item-switcher-div > ul > li:last-child {
@@ -113,6 +128,12 @@
 
 	.item-switcher-div > ul > li {
 		margin-right: 0;
+		width: auto;
+		padding: 0 1rem 0 1rem;
+	}
+
+	.item-switcher-div > ul > li:first-child {
+		margin-left: 0;
 	}
 }
 

@@ -146,6 +146,15 @@
 		align-items: center;
 	}
 
+	.nav-ul-responsive > li {
+		margin-top: 2.3rem;
+		margin-bottom: 2.3rem;
+	}
+
+	.nav-ul-responsive > li > a {
+		color: black;
+	}
+
 	/* style the burger lines */
 	.navbar-responsive-toggle-bar {
 		background-color: teal;
