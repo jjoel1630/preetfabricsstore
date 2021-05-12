@@ -254,6 +254,11 @@ p {
 .tm-page-title {
 	font-size: 2.5rem;
 }
+
+.tm-page-title.section-title {
+	font-size: 3.4rem;
+}
+
 .tm-catalog-item-list {
 	justify-content: space-between;
 }
