@@ -107,6 +107,17 @@
 }
 
 @media screen and (max-width: 804px) {
+	.title-text-div {
+		font-size: 15px;
+	}
+
+	/* .discover-button {
+		margin-top: 0.3rem;
+	} */
+
+	/* .title-text {
+		font-size: 1123ch;
+	} */
 	/* display none to the normal div */
 	.navbar-div {
 		display: none;
