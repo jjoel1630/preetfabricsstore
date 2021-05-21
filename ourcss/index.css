@@ -166,7 +166,6 @@
 /* .gallery-content-row {
 	margin-right: 10px;
 }
-
 .gallery-content-row:last-child {
 	margin-right: 0;
 } */
@@ -175,7 +174,6 @@
 	.gallery-content-row {
 		flex-direction: column;
 	}
-
 	.item-content-row {
 		flex-direction: column;
 	}
