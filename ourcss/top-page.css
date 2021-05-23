@@ -26,7 +26,8 @@
 
 /* main page div (has the background img, etc) */
 .main-page-div {
-	background-image: url("https://via.placeholder.com/150");
+	/* background-image: url("https://via.placeholder.com/150"); */
+	background-image: url("../img/homepage.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -62,7 +63,9 @@
 }
 
 .nav-li a {
-	color: var(--dark-color-500);
+	/* color: var(--dark-color-500); */
+	color: rgb(230, 221, 221);
+	font-weight: 1000;
 }
 
 .nav-li a:hover {
@@ -218,6 +221,8 @@
 
 .title-text {
 	font-size: 10ch;
+	color: rgb(230, 221, 221);
+	font-weight: bold;
 }
 
 .discover-button {
@@ -230,6 +235,7 @@
 		calc(-1 * var(--discover-button-top))
 	);
 	background-color: var(--main-color-400);
+	font-weight: bold;
 	padding: 0.4em 0.5em 0.4em 0.5em;
 	border-radius: 0.4rem;
 	border: none;
